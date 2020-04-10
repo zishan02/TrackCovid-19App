@@ -11,7 +11,7 @@ class CovidTable extends Component{
   }
 
   componentDidMount() {
-    fetch("http://localhost:8080/fetchTableData")
+    fetch("https://trackcovid-19.herokuapp.com/fetchTableData")
       .then(res => res.json())
       .then(
         (result) => {

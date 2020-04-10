@@ -9,7 +9,7 @@ class LastUpdated extends Component{
       }
     
       componentDidMount() {
-        fetch("http://localhost:8080/fetchLastUpdate")
+        fetch("https://trackcovid-19.herokuapp.com/fetchLastUpdate")
           .then(res => res.json())
           .then(
             (result) => {
