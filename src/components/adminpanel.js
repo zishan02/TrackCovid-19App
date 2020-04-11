@@ -22,14 +22,14 @@ class AdminPanel extends Component{
     const deceased= this.deceased.current.value;
     const state= this.state.current.value;
     console.log(confirmed,recovered,deceased,state);
-    const url = "https://trackcovid-19.herokuapp.com/AddState";
+    const url = "http://localhost:8080/AddState";
     const data = { stateName:state, confirmedCases:confirmed , recoveredCases:recovered,deceased:deceased}
 fetch(url, { method: 'POST', // or ‘PUT’
 body: JSON.stringify(data), // data can be `string` or {object}!
 headers:{ 'Content-Type': 'application/json' } })
 .then(res => res.json())
 .catch(error => console.error('Error:',error))
-.then(response => console.log('Success:', response));
+.then(response => alert('Success'));
     
   }
 
