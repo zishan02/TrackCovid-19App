@@ -20,3 +20,22 @@ padding: 2%;
 position: relative;
 top: 25%;
 }
+
+.detailspanel{
+    width: 50% !important;
+    position: relative;
+    left: 25%;
+color: darkred;
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow : 0 8px 6px -6px black
+
+}
+ .covidtable{
+width: 50% !important;
+position: relative;
+left: 25%;
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow : 0 8px 6px -6px black
+ }

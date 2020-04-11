@@ -9,6 +9,8 @@ import {
     
   } from "react-router-dom";
 import AdminPanel from './adminpanel';
+import Footer from './footer';
+import CovidDetailsPanel from './coviddetailspanel';
 
 class CovidRoot extends Component{
 
@@ -19,7 +21,9 @@ return (
 <Route exact path="/">
 <CovidHeader/>
 <Source/><LastUpdated/>
+<CovidDetailsPanel/>
 <CovidTable/>
+<Footer/>
 </Route>
 <Route exact path="/admin">
             <CovidHeader/>

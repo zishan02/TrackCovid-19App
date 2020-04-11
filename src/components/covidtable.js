@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Table from 'react-bootstrap/Table'
-
+import styles from './mystyle.module.css';
+import LastestUpdates from './latestupdates';
 
 class CovidTable extends Component{
   constructor(props) {
@@ -36,7 +37,7 @@ render(){
   
   const {items} = this.state;
 
-return (<Table striped bordered hover>
+return (<div id="covidtable"><Table striped bordered hover className={styles.covidtable}>
     <thead>
       <tr>
         <th>States / UT</th>
@@ -56,7 +57,7 @@ return (<Table striped bordered hover>
           </tr>
         ))}
          </tbody>
-  </Table>)
+  </Table><LastestUpdates/></div>)
 
 }}
 
