@@ -51,6 +51,27 @@ return(
       <option>Madhya Pradesh</option>
       <option>Goa</option>
       <option>Odisha</option>
+      <option>Andhra Pradesh</option>
+      <option>Andaman and Nicobar Islands</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Chandigarh</option>
+      <option>Chhattisgarh</option>
+      <option>Delhi</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu and Kashmir</option>
+      <option>Ladakh</option>
+      <option>Manipur</option>
+      <option>Mizoram	</option>
+      <option>Puducherry</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Telengana</option>
+      <option>Tripura</option>
+      <option>Uttarakhand</option>
+      <option>West Bengal</option>
     </Form.Control>
     <Form.Label>Confirmed</Form.Label>
         <Form.Control  type="text" placeholder="Confirmed" ref={this.confirmed}  />
