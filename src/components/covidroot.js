@@ -5,9 +5,8 @@ import LastUpdated from './lastupdated';
 import CovidTable from './covidtable';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    Route
+    
   } from "react-router-dom";
 import AdminPanel from './adminpanel';
 
@@ -23,6 +22,7 @@ return (
 <CovidTable/>
 </Route>
 <Route exact path="/admin">
+            <CovidHeader/>
             <AdminPanel /></Route>
             </Router>
 )

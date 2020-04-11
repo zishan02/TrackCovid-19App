@@ -1,6 +1,7 @@
-import React,{ inputRef, Component } from 'react';
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+import React,{ Component } from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import styles from './mystyle.module.css';
 
 class AdminPanel extends Component{
   constructor() {
@@ -36,9 +37,9 @@ headers:{ 'Content-Type': 'application/json' } })
 
 render(){
 
-return(
-<Form onSubmit={(event) => this.handleSubmit(event)}>
-<Form.Group controlId="exampleForm.ControlSelect1">
+return(<div className={styles.outerborder}><div className={styles.adminForm}>
+<Form onSubmit={(event) => this.handleSubmit(event)} >
+<Form.Group controlId="exampleForm.ControlSelect1" >
     <Form.Label>States</Form.Label>
     <Form.Control as="select" ref={this.state}>
       <option>Jharkhand</option>
@@ -79,14 +80,17 @@ return(
         <Form.Control  type="text" placeholder="Recovered" ref={this.recovered} />
         <Form.Label>Deceased</Form.Label>
         <Form.Control  type="text" placeholder="Deceased" ref={this.deceased}/>
-        <Button variant="primary" type="submit">
+        <div className={styles.btnstyle}>
+        <Button variant="primary" type="submit" >
     Submit
   </Button>
+  </div>
 </Form.Group>
  
   
 </Form>
-
+</div>
+</div>
 
 )
 
