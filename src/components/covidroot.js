@@ -19,9 +19,9 @@ render(){
 
 return (<div id="rootcomp">
   <Helmet>
+  <meta name="google-site-verification" content="-j6VE9vHNhTU-me0WuTjM8kXmnlA6p_3sU4g2GD-GqU" />
      <meta name="covid" content="covid tracker" />
      <meta name="corona" content="corona virus tracker" />
-     <meta name="google-site-verification" content="-j6VE9vHNhTU-me0WuTjM8kXmnlA6p_3sU4g2GD-GqU" />
      </Helmet>  
 <Router>
 <Route exact path="/">
