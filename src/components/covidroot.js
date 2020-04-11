@@ -3,6 +3,7 @@ import Source from './source';
 import CovidHeader from './covidheader';
 import LastUpdated from './lastupdated';
 import CovidTable from './covidtable';
+import {Helmet} from "react-helmet";
 import {
     BrowserRouter as Router,
     Route
@@ -16,7 +17,12 @@ class CovidRoot extends Component{
 
 render(){
 
-return (
+return (<div id="rootcomp">
+  <Helmet>
+     <meta name="covid" content="covid tracker" />
+     <meta name="corona" content="corona virus tracker" />
+     <meta name="google-site-verification" content="-j6VE9vHNhTU-me0WuTjM8kXmnlA6p_3sU4g2GD-GqU" />
+     </Helmet>  
 <Router>
 <Route exact path="/">
 <CovidHeader/>
@@ -29,6 +35,7 @@ return (
             <CovidHeader/>
             <AdminPanel /></Route>
             </Router>
+        </div>    
 )
     
 
