@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import styles from './mystyle.module.css';
 
 class CovidDetailsPanel extends Component{
     constructor(props) {
@@ -34,9 +33,12 @@ render(){
     const {item} = this.state;
 return (
     <div id="panelbar">
-<h4 className={styles.detailspanel}>Total Active Cases : {item.totalActiveCases}</h4>
-<h4 className={styles.detailspanel}>Total Recovered : {item.totalRecoveredCases}</h4>
-<h4 className={styles.detailspanel}>Total Deceased : {item.totalDeceasedCases}</h4>
+      <div id="panelactive" >
+<h4 className="panelboxactive hoverable">Total Active  : {item.totalActiveCases}</h4></div>
+<div id="panelrecovered" >
+<h4 className="panelboxrecovered hoverable">Total Recovered : {item.totalRecoveredCases}</h4></div>
+<div id="paneldeceased" >
+<h4 className="panelboxdeceased hoverable">Total Deceased : {item.totalDeceasedCases}</h4></div>
 </div>
 )
 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -36,3 +37,69 @@
     transform: rotate(360deg);
   }
 }
+.col-12,
+.col-6,
+.col-md-8,
+.col-md-6,
+.col-md-4 {
+padding: 1rem;
+border: 2px solid #fff;
+color: #fff;
+text-align: center;
+}
+.panelboxactive {
+  height: 120px;
+  width: 100%;
+  background-color: #b6a12e;
+  text-decoration: black;
+  padding: 12%;
+  font-weight: bold;
+}
+.panelboxrecovered {
+  height: 120px;
+  width: 100%;
+  background-color: #25a130;
+  text-decoration: black;
+  padding: 12%;
+  font-weight: bold;
+}
+.panelboxdeceased {
+  height: 120px;
+  width: 100%;
+  background-color: hsl(0, 52%, 49%);
+  text-decoration: black;
+  padding: 12%;
+  font-weight: bold;
+}
+.covidlastupdated{
+color: black;
+
+
+}
+
+.covidtable{
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow : 0 8px 6px -6px black;
+  
+  }
+  .tableheader{
+    
+     
+    }
+    table.table thead th{
+      font-weight: bold !important; 
+      color:white;
+      background-color: brown;
+    }
+    table.table td {
+      font-weight: bold !important;
+      background-color: rgb(235, 193, 193);
+      color: rgb(10, 8, 8); 
+      font-family: fantasy;
+      
+    }
+    
+    
+   
+   

@@ -9,7 +9,7 @@ class Footer extends Component {
             <MDBFooter color="blue" className="font-small pt-4 mt-4">
                 <MDBContainer fluid className="text-center text-md-left">
                     <MDBRow>
-                        <MDBCol md="6">
+                        <MDBCol md="10" >
                             <h5 className="title">Disclaimer</h5>
                             <p>
                                 TrackCovid-19 is using government data to show up on its website and tries to update with accurate data. Dont rely completely on this data.

@@ -4,7 +4,7 @@ import CovidRoot from './components/covidroot';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App animated fadeIn">
      <CovidRoot/>
     </div>
   );

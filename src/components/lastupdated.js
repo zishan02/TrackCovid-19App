@@ -32,8 +32,8 @@ class LastUpdated extends Component{
     render(){
 const {lastupdated}=this.state;
 console.log({lastupdated});
-return (<div><h6 > Last Updated :{lastupdated.date}</h6>
-      <h6>{lastupdated.timeDiffText}</h6></div>)
+return (<div><h6 className="covidlastupdated"> Last Updated :{lastupdated.date}</h6>
+      <h6 className="covidlastupdated">{lastupdated.timeDiffText}</h6></div>)
 
     }}
 
