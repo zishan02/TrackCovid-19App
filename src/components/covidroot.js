@@ -15,6 +15,7 @@ import CovidDetailsPanel from './coviddetailspanel';
 import { MDBRow, MDBContainer, MDBCol } from 'mdbreact';
 import Source from './source';
 import LatestUpdates from './latestupdates';
+import CovidLineChart from './covidlinechart';
 
 class CovidRoot extends Component{
 
@@ -53,7 +54,7 @@ return (
 
   </MDBCol>
   <MDBCol size="6" md="4">
-  <LatestUpdates/>
+  <CovidLineChart/>
   </MDBCol>
   </MDBRow>
   <MDBRow>
