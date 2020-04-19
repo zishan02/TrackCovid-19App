@@ -44,7 +44,7 @@ return (
             <AdminPanel /></Route>
             </Router>
         </div>  </MDBCol>
-    <MDBCol size="6" md="4"> Details</MDBCol>
+    
   
   </MDBRow>
   <MDBRow>
@@ -53,9 +53,10 @@ return (
   <CovidTable/>
 
   </MDBCol>
-  <MDBCol size="6" md="4">
-  <CovidLineChart/>
-  </MDBCol>
+
+  </MDBRow>
+  <MDBRow>
+  <MDBCol ><CovidLineChart/></MDBCol>
   </MDBRow>
   <MDBRow>
   <MDBCol ><Footer/></MDBCol>

@@ -43,6 +43,7 @@ return (<div id="covidtable"><Table striped bordered hover className="covidtable
         <th>Confirmed</th>
         <th>Recovered</th>
         <th>Death</th>
+        <th>New Confirmed</th>
       </tr>
     </thead>
     <tbody>
@@ -53,6 +54,7 @@ return (<div id="covidtable"><Table striped bordered hover className="covidtable
           <td key={item.confirmedCases.key}>{item.confirmedCases}</td>
           <td key={item.recoveredCases.key}>{item.recoveredCases}</td>
           <td key={item.deceased.key}> {item.deceased}</td>
+          <td key={item.changeConfirmed.key}>+{item.changeConfirmed}</td>
           </tr>
         ))}
          </tbody>
