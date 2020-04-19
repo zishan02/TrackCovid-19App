@@ -56,7 +56,7 @@ return (
 
   </MDBRow>
   <MDBRow>
-  <MDBCol ><CovidLineChart/></MDBCol>
+  <MDBCol size="12" md="12" sm="1"><CovidLineChart/></MDBCol>
   </MDBRow>
   <MDBRow>
   <MDBCol ><Footer/></MDBCol>
