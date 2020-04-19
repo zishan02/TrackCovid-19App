@@ -51,7 +51,7 @@ class CovidLineChart extends Component {
             console.log(result);
             this.setState({
               series: [{
-                name: "Desktops",
+                name: "Confirmed Cases",
                 data: result.yAxis
             }],
             options: {
