@@ -44,7 +44,7 @@
 .col-md-4 {
 padding: 1rem;
 border: 2px solid #fff;
-color: #fff;
+
 text-align: center;
 }
 .panelboxactive {
@@ -54,6 +54,10 @@ text-align: center;
   text-decoration: black;
   padding: 12%;
   font-weight: bold;
+}
+#panelactive > h4,#panelrecovered > h4,#paneldeceased > h4{
+
+  color: azure;
 }
 .panelboxrecovered {
   height: 120px;
@@ -86,17 +90,17 @@ color: black;
   .tableheader{
     
      
-    }
+}
     table.table thead th{
       font-weight: bold !important; 
       color:white;
       background-color: brown;
     }
     table.table td {
-      font-weight: bold !important;
-      background-color: rgb(235, 193, 193);
+      font-weight: bold !important; 
+      background-color:whitesmoke;
       color: rgb(10, 8, 8); 
-      font-family: fantasy;
+     
       
     }
     

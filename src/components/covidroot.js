@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import CovidHeader from './covidheader';
 import LastUpdated from './lastupdated';
 import CovidTable from './covidtable';
-import {Helmet} from "react-helmet";
-
 import {
     BrowserRouter as Router,
     Route
@@ -14,8 +12,9 @@ import Footer from './footer';
 import CovidDetailsPanel from './coviddetailspanel';
 import { MDBRow, MDBContainer, MDBCol } from 'mdbreact';
 import Source from './source';
-import LatestUpdates from './latestupdates';
 import CovidLineChart from './covidlinechart';
+import RateOfIncreaseTable from './rateofincreasetable';
+import CovidTop5 from './CovidTop5';
 
 class CovidRoot extends Component{
 
@@ -27,11 +26,6 @@ return (
   <MDBRow>
   <MDBCol size="6" md="4"></MDBCol>
     <MDBCol size="6" md="4"> <div id="rootcomp">
-  <Helmet>
-  <meta name="google-site-verification" content="-j6VE9vHNhTU-me0WuTjM8kXmnlA6p_3sU4g2GD-GqU" />
-     <meta name="covid" content="covid tracker" />
-     <meta name="corona" content="corona virus tracker" />
-     </Helmet>  
 <Router>
 <Route exact path="/">
 <CovidHeader/>
@@ -48,13 +42,9 @@ return (
   
   </MDBRow>
   <MDBRow>
-  <MDBCol size="6" md="4"><CovidDetailsPanel/></MDBCol>
-  <MDBCol size="6" md="4">
-  <CovidTable/>
-
-  </MDBCol>
-
-  </MDBRow>
+  <MDBCol size="6" md="4"><CovidDetailsPanel/><RateOfIncreaseTable/><CovidTop5/></MDBCol>
+  <MDBCol size="6" md="4"><CovidTable/></MDBCol>
+</MDBRow>
   <MDBRow>
   <MDBCol size="12" md="12" sm="1"><CovidLineChart/></MDBCol>
   </MDBRow>
