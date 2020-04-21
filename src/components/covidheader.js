@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
+import Button from 'react-bootstrap/Button';
+import FormControl from 'react-bootstrap/FormControl';
+import { Nav, Navbar} from "react-bootstrap";
+import Form from 'react-bootstrap/Form';
 
 
 class CovidHeader extends Component{
 
 render(){return (
-      <div id="logo"><img
-        src={logo}
-        width="50%"
-        height="20%"
-        className="d-inline-block align-top"
-        alt="TrackCovid-19"
-      /></div>
-    
-  )}
+<Navbar bg="light" variant="light">
+<Navbar.Brand href="/">TrackCovid-19</Navbar.Brand>
+<Nav className="mr-auto">
+  <Nav.Link href="/" className="hoverable">Home</Nav.Link>
+  <Nav.Link href="#" className="hoverable">Join Us</Nav.Link>
+</Nav>
+{/* <Form inline>
+  <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+  <Button variant="outline-primary">Search</Button>
+</Form> */}
+</Navbar>
+     )}
 
 
 }

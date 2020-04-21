@@ -43,34 +43,44 @@
 .col-md-6,
 .col-md-4 {
 padding: 1rem;
-border: 2px solid #fff;
-
 text-align: center;
 }
 .panelboxactive {
+  border-radius: 25px;
   height: 120px;
   width: 100%;
-  background-color: #b6a12e;
+  background-color: #e9e0b1;
   text-decoration: black;
   padding: 12%;
   font-weight: bold;
 }
-#panelactive > h4,#panelrecovered > h4,#paneldeceased > h4{
+#panelactive > h4{
 
-  color: azure;
+  color: #635409;
 }
+#panelrecovered > h4{
+  color: #1b461e;
+
+}
+#paneldeceased > h4{
+
+  color: hsl(0, 48%, 41%);
+}
+
 .panelboxrecovered {
+  border-radius: 25px;
   height: 120px;
   width: 100%;
-  background-color: #25a130;
+  background-color: #bbf7c0;
   text-decoration: black;
   padding: 12%;
   font-weight: bold;
 }
 .panelboxdeceased {
+  border-radius: 25px;
   height: 120px;
   width: 100%;
-  background-color: hsl(0, 52%, 49%);
+  background-color: hsl(0, 85%, 92%);
   text-decoration: black;
   padding: 12%;
   font-weight: bold;
@@ -87,14 +97,11 @@ color: black;
   box-shadow : 0 8px 6px -6px black;
   
   }
-  .tableheader{
-    
-     
-}
     table.table thead th{
+    
       font-weight: bold !important; 
-      color:white;
-      background-color: brown;
+      color:rgb(102, 32, 32);
+      background-color: rgb(250, 243, 243);
     }
     table.table td {
       font-weight: bold !important; 
@@ -103,6 +110,46 @@ color: black;
      
       
     }
+    #root > div > div > div.container > div:nth-child(2) > div:nth-child(1) > h5{
+      border-radius: 25px;
+      background-color: rgb(197, 231, 231);
+     height: 150px;
+      padding: 12%;
+      color:teal;
+    }
+
+    #root > div > div > div.container > div:nth-child(2) > div:nth-child(1) > h5 > b:nth-child(3){
+
+      color:darkred;
+     
+      
+    }
+    #rootcomp > div{
+      border-radius: 25px;
+      background-color: rgb(197, 231, 231);
+      height: 100px;
+      padding: 7%;
+}
+#rootcomp > div.hoverable > h6:nth-child(2) > b{
+
+  color: rgb(6, 82, 82);
+  font-weight: bold;
+}
+#rootcomp > div.hoverable > h6:nth-child(1) > b{
+  color: rgb(6, 82, 82);
+  font-weight: bold;
+}
+
+#root > div > div > div.row > div > nav > a{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(6, 82, 82);
+  width: 20%;
+}
+#root > div > div > div.row > div > nav > div > a{
+  color: rgb(6, 82, 82);
+  font-weight: bold;
+
+}
     
     
    

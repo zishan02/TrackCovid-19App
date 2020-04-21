@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 
-class LastUpdated extends Component{
+
+class ExpectedOutcomes extends Component{
     constructor(props) {
         super(props);
         this.state = {
-          lastupdated: "00 :00"
+          items:""
         };
       }
-    
+
       componentDidMount() {
-        fetch("https://trackcovid-19.herokuapp.com/fetchLastUpdate")
+        fetch("https://trackcovid-19.herokuapp.com/fetchEstimatedCases")
           .then(res => res.json())
           .then(
+              
             (result) => {
                 console.log(result);
               this.setState({
-                lastupdated: result
+                items: result
               });
             },
             // Note: it's important to handle errors here
@@ -29,12 +31,19 @@ class LastUpdated extends Component{
           )
        }
     
-    render(){
-const {lastupdated}=this.state;
 
-return (<div className="hoverable"><h6 className="covidlastupdated "><b> Last Updated :{lastupdated.date}</b></h6>
-      <h6 className="covidlastupdated"><b>{lastupdated.timeDiffText}</b></h6></div>)
+render(){
 
-    }}
+    const {items} =this.state;
+return(
+<h5 className="hoverable"><b>Estimated Confirmed Cases: </b><br/><b>{items.estimatedRecoveredWeek}</b> Cases in a Week<br/>
+</h5>)
 
-export default LastUpdated;
+}
+
+
+
+}
+
+export default ExpectedOutcomes;
+
