@@ -12,7 +12,7 @@ render(){return (
 <Navbar.Brand href="/">TrackCovid-19</Navbar.Brand>
 <Nav className="mr-auto">
   <Nav.Link href="/" className="hoverable">Home</Nav.Link>
-  <Nav.Link href="#" className="hoverable">Join Us</Nav.Link>
+  <Nav.Link href="https://join.slack.com/t/trackcovid-19/shared_invite/zt-dqyrglcz-T1fHpOTMGeL6WnWFDlIDaw" className="hoverable">Join Us[Slack Link]</Nav.Link>
 </Nav>
 {/* <Form inline>
   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
