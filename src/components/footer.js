@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { Button } from 'react-bootstrap';
 
 class Footer extends Component {
