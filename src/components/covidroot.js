@@ -16,13 +16,15 @@ import CovidLineChart from './covidlinechart';
 import RateOfIncreaseTable from './rateofincreasetable';
 import CovidTop5 from './CovidTop5';
 import ExpectedOutcomes from './expectedoutcomes';
+import DeathChart from './deathchartadmin';
+import DeathChartGraph from './deathchartgraph';
 
 class CovidRoot extends Component{
 
 render(){
 
 return (  
-  <div>
+  <div><Router>
   <MDBRow>
   <MDBCol ><CovidHeader/></MDBCol></MDBRow>
   <MDBContainer>
@@ -30,32 +32,34 @@ return (
    <MDBRow>
   <MDBCol size="6" md="4"></MDBCol>
     <MDBCol size="6" md="4"><div id="rootcomp">
-<Router>
-<Route exact path="/">
+    <Route exact path="/">
+
 <Source/><LastUpdated/>
-
-
 </Route>
-<Route exact path="/admin">
-            <CovidHeader/>
-            <AdminPanel /></Route>
-            </Router>
+<Route exact path="/admin"><AdminPanel /></Route> 
+<Route exact path="/deathadmin"><DeathChart /></Route> 
+           
+            
+           
+           
         </div>  </MDBCol>
     
   
   </MDBRow>
   <MDBRow>
-  <MDBCol size="6" md="4"><CovidDetailsPanel/><RateOfIncreaseTable/><ExpectedOutcomes/><CovidTop5/></MDBCol>
-  <MDBCol size="6" md="4"><CovidTable/></MDBCol>
+  <Route exact path="/"> <MDBCol size="6" md="4"><CovidDetailsPanel/><RateOfIncreaseTable/><ExpectedOutcomes/><CovidTop5/></MDBCol>
+  <MDBCol size="6" md="4"><CovidTable/></MDBCol></Route>
 </MDBRow>
   <MDBRow>
-  <MDBCol size="12" md="12" sm="1"><CovidLineChart/><Footer/></MDBCol>
+  <Route exact path="/"> <MDBCol ><CovidLineChart/></MDBCol></Route>
+  <Route exact path="/"> <MDBCol ><DeathChartGraph/></MDBCol></Route>
   </MDBRow>
- 
+  <MDBRow><MDBCol ><Footer/></MDBCol ></MDBRow>
   </MDBContainer>
   {/* <MDBRow>
   <MDBCol ><Footer/></MDBCol>
   </MDBRow> */}
+  </Router>
   </div>
 )
     
