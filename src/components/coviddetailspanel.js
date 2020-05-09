@@ -34,7 +34,7 @@ render(){
 return (
     <div id="panelbar">
       <div id="panelactive" >
-<h4 className="panelboxactive hoverable">Total Active  : {item.totalActiveCases}</h4></div>
+<h4 className="panelboxactive hoverable">Total Confirmed  : {item.totalActiveCases}</h4></div>
 <div id="panelrecovered" >
 <h4 className="panelboxrecovered hoverable">Total Recovered : {item.totalRecoveredCases}</h4></div>
 <div id="paneldeceased" >
